@@ -1,9 +1,10 @@
+//Inclui a biblioteca que possui o cabeçalho geral
 #include <mercado.h>
-
+//Implementa a função menu onde o usuário pode escolher entre cadastrar produtos, listar, comprar, ver o carrinho e fechar o pedido
 void menu()
 {
     int opcao;
-    while (1)
+    while (1) //Garante que o programa rode até que o usuário escolha sair, e chama as funções de acordo com a opção escolhida
     {
         printf("================ Bem-vindo(a) - Solução Mercado ===========\n");
         printf("1 - Cadastrar produto\n");

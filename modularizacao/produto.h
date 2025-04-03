@@ -1,5 +1,5 @@
-#ifndef PRODUTO_H //---> SE Produto não definido
-#define PRODUTO_H //
+#ifndef PRODUTO_H //---> SE Produto não definido...
+#define PRODUTO_H //---> ..Defina Produto
 
 //Definindo a estrutura Produto, que registra um item a ser vendido
 typedef struct

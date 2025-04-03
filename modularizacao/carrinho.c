@@ -2,10 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+//Array acima para rastrear e limitar os itens do carrinho
 
 static int contador_carrinho = 0;
 static Carrinho carrinho[50];
 
+//Implementando as funções do carrinho
+
+//Adiciona um produto ao carrinho ou aumenta a qtd se já houver o mesmo item
 void comprarProduto()
 {
     if (contador_carrinho > 0)
@@ -46,6 +50,7 @@ void comprarProduto()
     sleep(2);
 }
 
+//Lista os produtos
 void visualizarCarrinho()
 {
     if (contador_carrinho > 0)
@@ -66,7 +71,7 @@ void visualizarCarrinho()
     }
     sleep(2);
 }
-
+//Verifica se o produto já está no carrinho e retorna um índice
 int *temNoCarrinho(int codigo)
 {
     static int retorno[] = {0, 0};
@@ -81,7 +86,7 @@ int *temNoCarrinho(int codigo)
     }
     return retorno;
 }
-
+//Encerra a compra e mostra o total. Agradece a compra e zera o carrinho
 void fecharPedido()
 {
     if (contador_carrinho > 0)

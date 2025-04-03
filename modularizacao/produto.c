@@ -1,9 +1,10 @@
-#include "produto.h"
+#include "produto.h" //--> Guarda a implementação das funções declaradas em produto.h
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
 
+//Array e um contador para guardar os produtos cadastrados
 static int contador_produto = 0;
 static Produto produtos[50];
 
